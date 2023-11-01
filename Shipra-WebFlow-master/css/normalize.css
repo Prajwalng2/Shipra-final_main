@@ -354,6 +354,43 @@ th {
   padding: 0;
 }
 
+/* WOW ANIMATION */
+
 .my-custom-text{
   font-size: 28px;
+}
+
+element.style {
+  visibility: visible;
+  animation-name: fadeInLeftBig;
+}
+
+.fadeInLeftBig {
+  animation-name: fadeInLeftBig;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.wowBack {
+  position: relative;
+  overflow: hidden;
+}
+
+.wowWrap div {
+  background: #27ae60;
+  display: block;
+  width: 100%;
+  margin: 5% 0;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.wowWrap {
+  width: 16.66%;
+  float: left;
+  padding: 0 .5%;
 }
