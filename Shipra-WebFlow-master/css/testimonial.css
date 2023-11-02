@@ -6,13 +6,16 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.another{
+  background: #FAF3F5;
+}
 .new {
   display: flex;
   padding: 0 50 px;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background: #FAF3F5;
+  min-height: 75vh;
+  
 }
 .wrapper {
   max-width: 95%;
@@ -133,4 +136,8 @@
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
+}
+
+.okay{
+  padding-top: 60px;
 }
