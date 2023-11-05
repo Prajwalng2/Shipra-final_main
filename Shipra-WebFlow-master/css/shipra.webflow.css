@@ -1302,7 +1302,7 @@ li {
   background-image: linear-gradient(#fff,#fff);
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: .4s;
+  transition: .6s;
   border: 2px solid #da2b24;
   padding: 15px 45px;
   text-decoration: none;
