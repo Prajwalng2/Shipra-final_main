@@ -1299,11 +1299,24 @@ li {
 .button2 {
   color: #fff;
   background-color: #da2b24;
+  background-image: linear-gradient(#fff,#fff);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .4s;
   border: 2px solid #da2b24;
   padding: 15px 45px;
   text-decoration: none;
   position: relative;
   overflow: hidden;
+}
+.button2:hover{
+  color: #da2b24;
+  background-size: 100% 100%;
+  /* background-size: 100% 100%;
+  
+  background-color: #fff; */
+  
+  /* transition: .4s; */
 }
 
 .button2-text {
