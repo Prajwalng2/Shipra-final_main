@@ -1,4 +1,4 @@
-.shipra-blog-page,
+/* .shipra-blog-page,
 .shipra-blog-page * {
   box-sizing: border-box;
 }
@@ -417,4 +417,8 @@
   position: absolute;
   left: calc(50% - 216px);
   top: 190px;
+} */
+
+.text-color-white-4s{
+  color: white;
 }

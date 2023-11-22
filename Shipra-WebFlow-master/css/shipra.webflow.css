@@ -1155,10 +1155,19 @@ li {
   position: relative;
 }
 
+.button1-text_4s {
+  z-index: 5;
+  color: #da2c25;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
 .buuton1-2 {
-  color: #fff;
-  background-color: #da2b24;
-  border: 1px solid #da2b24;
+  color: #da2b24;
+  background-color: #fff;
+  border: 1px solid #fff;
   padding: 15px 40px;
   text-decoration: none;
   position: relative;
@@ -1633,13 +1642,20 @@ li {
 }
 
 .features-left {
-  max-width: 450px;
+  max-width: 550px;
   flex-direction: column;
   align-items: flex-start;
   display: flex;
   position: -webkit-sticky;
   position: sticky;
   top: 150px;
+  /* color: white; */
+  background-color: #da2c25;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin: 2%;
 }
 
 .features-right {
@@ -1679,7 +1695,7 @@ li {
 }
 
 ._4s_text-style {
-  color: #da2b24;
+  color: #fff;
   font-size: 25em;
 }
 
@@ -3916,6 +3932,12 @@ li {
   .paragraph-5 {
     margin-bottom: 30px;
   }
+  .paragraph-5_4s {
+    margin-bottom: 30px;
+    color: white;
+    padding-right: 1%;
+  }
+
 
   .menu-button {
     color: #da2b24;
@@ -5094,6 +5116,11 @@ li {
 
   .paragraph-3, .paragraph-4, .heading-8, .heading-9, .paragraph-5, .heading-10, .heading-11 {
     font-size: 12px;
+  }
+  .paragraph-5_4s{
+    margin-bottom: 30px;
+    color: white;
+    padding-right: 1%;
   }
 
   .brand {
