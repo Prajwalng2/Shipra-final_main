@@ -419,3 +419,7 @@ element.style {
 .text-color-white-4s{
   color: white;
 }
+
+.space-20percent{
+  padding-left: 20%;
+}
