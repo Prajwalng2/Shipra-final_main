@@ -3358,12 +3358,14 @@ li {
 }
 
 .div-block-22 {
-  height: 250px;
+  height: 350px;
+  min-width: 600px;
   background-image: url('../images/Innovative-solutions.webp');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 30px;
+  margin-right: 40px;
 }
 
 .paragraph-11 {
@@ -4028,6 +4030,11 @@ li {
     flex-direction: column;
   }
 
+  .div-block-22{
+    margin-bottom: 30px;
+    margin-right: 0; 
+  }
+
   .div-block-24 {
     margin-bottom: 30px;
     margin-right: 0;
@@ -4617,7 +4624,7 @@ li {
     margin-bottom: 10px;
   }
 
-  .div-block-24, .div-block-27, .div-block-28 {
+  .div-block-22,.div-block-24, .div-block-27, .div-block-28 {
     height: 200px;
     min-width: 500px;
     margin-bottom: 10px;
@@ -5215,7 +5222,7 @@ li {
     font-size: 12px;
   }
 
-  .div-block-24, .div-block-27, .div-block-28 {
+  .div-block-22, .div-block-24, .div-block-27, .div-block-28 {
     min-width: 300px;
   }
 
