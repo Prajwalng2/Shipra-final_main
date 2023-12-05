@@ -7,10 +7,16 @@
     line-height: 1.5;
     letter-spacing: 0.5px;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 20px;
   }
   h1 {
     font-size: clamp(20px, 4vw, 30px);
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  h2 {
+    /* font-size: clamp(20px, 4vw, 30px); */
     line-height: 1.2;
     margin-bottom: 40px;
   }
@@ -24,7 +30,7 @@
     font-weight: 600;
     background-color: #d4d4d4;
     color: black;
-    padding: 1rem;
+    padding: 0.5rem;
     /* margin-bottom: 1rem; */
     outline: none;
     border-bottom: 2px solid black;
@@ -35,6 +41,7 @@
     position: relative;
     
   }
+
 
   
 details
@@ -91,4 +98,14 @@ details
   th {
     background-color: #808080; /* Grey color */
     color: #fff;
+  }
+
+  .faq__content{
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .start-para-4s{
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
   }
