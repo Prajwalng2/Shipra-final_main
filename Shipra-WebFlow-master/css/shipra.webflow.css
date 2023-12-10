@@ -3472,6 +3472,16 @@ li {
   font-style: italic;
 }
 
+.logo-tagline-no-hover {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: italic;
+  color: #000;
+}
+
+
+
 .new-construction_wrapper, .renovation-repairs_wrapper {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -4099,6 +4109,11 @@ li {
 
   .logo-tagline {
     font-size: 13px;
+  }
+
+  .logo-tagline-no-hover {
+    font-size: 13px;
+    color: #000;
   }
 
   .new-construction_wrapper, .renovation-repairs_wrapper {
