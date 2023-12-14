@@ -1115,6 +1115,11 @@ li {
   text-decoration: none;
 }
 
+.footer_menu-text_wrapper:hover {
+  color: #fff;
+ 
+}
+
 .link-block {
   color: #2d2e2d;
   padding: 20px 20px 20px 0;
