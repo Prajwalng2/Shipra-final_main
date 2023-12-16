@@ -806,9 +806,16 @@ li {
 }
 
 .background-video {
+  position: relative; 
   height: 800px;
-  display: block;
+  overflow: hidden; 
+  /* display: block; */
 }
+.slide-image-2 { 
+	height: 800px; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+} 
 
 .div-block {
   height: 100%;
@@ -3382,8 +3389,8 @@ li {
 }
 
 ._3d-animation_wrapper {
-  display: none;
-  position: relative;
+  /* display: none; */
+  /* position: relative; */
 }
 
 .accordion-heading-2 {
@@ -3819,6 +3826,9 @@ li {
   .background-video {
     height: 50vh;
   }
+  .slide-image-2 { 
+    height: 50vh; 
+  } 
 
   .d-64-card-wrapper {
     margin-top: 20px;
@@ -4271,6 +4281,10 @@ li {
 
   .background-video {
     height: 40vh;
+  }
+
+  .slide-image-2 { 
+    height: 40vh; 
   }
 
   .d-127-card-wrapper {
@@ -4850,6 +4864,11 @@ li {
   .background-video {
     width: 100%;
     height: 50vw;
+  }
+
+  .slide-image-2 { 
+    width: 100%;
+    height: 50vw; 
   }
 
   .d-64-card-wrapper {
