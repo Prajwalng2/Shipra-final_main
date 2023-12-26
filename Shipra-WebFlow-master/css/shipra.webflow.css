@@ -3389,8 +3389,8 @@ li {
 }
 
 ._3d-animation_wrapper {
-  /* display: none; */
-  /* position: relative; */
+  display: none;
+  position: relative;
 }
 
 .accordion-heading-2 {
