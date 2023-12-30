@@ -1,50 +1,87 @@
-.carousel { 
-	position: relative; 
-	width: 870px; 
-	height: 500px; 
-	overflow: hidden; 
-    /* display: flex;
-    flex-direction: column; */
-	background-color: #cdcdcd; 
-} 
-
-.shipra-video-item-1 .slide-image { 
-	width: 870px; 
-	height: 500px; 
-	background-size: cover; 
-	background-repeat: no-repeat; 
-} 
-
-.shipra-video-item-1 { 
-	position: absolute; 
-	width: 100%; 
-	height: 270px; 
-	border: none; 
-	top: 0; 
-	left: 100%; 
-} 
-
-.shipra-video-item-1.active { 
-	left: 0; 
-	transition: all 0.3s ease-out; 
-} 
-
-.shipra-video-item-1 div { 
-	height: 100%; 
-} 
-
-.red { 
-	background-color: red; 
-} 
-
-.green { 
-	background-color: green; 
-} 
-
-.yellow { 
-	background-color: yellow; 
-} 
-
-.violet { 
-	background-color: violet; 
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
+
+.popup-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    /* height: 40px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; */
+    cursor: pointer;
+}
+
+.play-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .video-container {
+        width: 90%;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .video-container {
+        width: 700px;
+        height: 393.75px; /* 16:9 aspect ratio */
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .video-container {
+        width: 800px;
+        height: 450px; /* 16:9 aspect ratio */
+    }
+}
+
+

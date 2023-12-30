@@ -1,29 +1,23 @@
-window.onload = function () { 
-	let slides = 
-		document.getElementsByClassName('shipra-video-item-1'); 
+function openPopup(videoId) {
+    var popupContainer = document.getElementById('popup-container');
+    var youtubeIframe = document.getElementById('youtube-iframe');
 
-	function addActive(slide) { 
-		slide.classList.add('active'); 
-	} 
+    youtubeIframe.src = "https://www.youtube.com/embed/" + videoId;
+    popupContainer.classList.add('show');
+}
 
-	function removeActive(slide) { 
-		slide.classList.remove('active'); 
-	} 
+function closePopup() {
+    var popupContainer = document.getElementById('popup-container');
+    var youtubeIframe = document.getElementById('youtube-iframe');
 
-	addActive(slides[0]); 
-	setInterval(function () { 
-        console.log("Video shifting...")
-		for (let i = 0; i < slides.length; i++) { 
-			if (i + 1 == slides.length) { 
-				addActive(slides[0]); 
-				setTimeout(removeActive, 350, slides[i]); 
-				break; 
-			} 
-			if (slides[i].classList.contains('active')) { 
-				setTimeout(removeActive, 350, slides[i]); 
-				addActive(slides[i + 1]); 
-				break; 
-			} 
-		} 
-	}, 4000); 
-};
+    youtubeIframe.src = "";
+    popupContainer.classList.remove('show');
+}
+
+var popupButtons = document.querySelectorAll('.play-button');
+popupButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var videoId = this.getAttribute('data-video-id');
+        openPopup(videoId);
+    });
+});
