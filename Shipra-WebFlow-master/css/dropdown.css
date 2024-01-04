@@ -3,9 +3,12 @@
     display: inline-block;
     margin: 10px;
     font-family: Arial, sans-serif;
+
+    /* padding-left: 20%; */
   }
 
   .dropdown a {
+
     display: block;
     padding: 10px;
     text-decoration: none;

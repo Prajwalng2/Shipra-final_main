@@ -422,4 +422,45 @@ element.style {
 
 .space-20percent{
   padding-left: 20%;
+
 }
+
+.products-dropdown-cover{
+
+  position: sticky;
+  top: 0px;
+  background-color: #f8f8f8;
+  color: white;
+  padding-left: 20%;
+  /* padding: 10px; */
+  border-radius: 5px;
+  z-index: 1000;
+
+
+
+
+
+
+
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sticky-element {
+  position: sticky;
+  top: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.content {
+  padding: 16px;
+} 
