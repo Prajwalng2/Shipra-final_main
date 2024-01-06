@@ -444,6 +444,37 @@ element.style {
 
 }
 
+#goToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 7%;
+  right: 20px;
+  background-color: #da2c25;
+  border: 2px solid #da2c25;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#goToTopBtn:hover {
+  background-color: white;
+  color: #da2c25;
+  border: 2px solid #da2c25;
+  transition: .6s;
+}
+
+@media only screen and (max-width: 600px) {
+  #goToTopBtn {
+      bottom: 50px;
+      right: 7px;
+      font-size: 14px;
+      padding: 8px;
+  }
+}
 
 .container {
   width: 80%;

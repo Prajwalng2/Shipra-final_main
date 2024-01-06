@@ -107,7 +107,6 @@
     <!-- <h3>Dropdown</h3> -->
 
 
-<<<<<<< HEAD
     <div class="dropdown">
       <a href="#">New Construction Projects</a>
       <div class="dropdown-content">
@@ -272,10 +271,10 @@
 
         <!-- item 6 -->
         <div class="nested-dropdown">
-          <a href="products.html#facade-solutions">FACADE SOLUTIONS</a>
+          <a href="new-products.html#facade-solutions">FACADE SOLUTIONS</a>
           <div class="nested-dropdown-content">
             <div class="double-nested-dropdown">
-              <a href="products.html#GLASS">GLASS </a>
+              <a href="new-products.html#GLASS">GLASS </a>
               <div class="double-nested-dropdown-content">
                 <a href="products.html#GLASS">PRIMERS </a>
                 <a href="products.html#GLASS">CLEANERS</a>
@@ -336,7 +335,7 @@
         </div>
 
         <!-- test item -->
-        <!-- <div class="nested-dropdown">
+        <div class="nested-dropdown">
           <button> EXPANSION JOINT </button>
           <div class="nested-dropdown-content">
             <button>JOINT BOARDS </button>
@@ -352,11 +351,11 @@
             <button>JOINT TAPES </button>
             <button>TAPE ADHESIVES </button>
           </div>
-        </div> -->
+        </div>
 
         <!-- test item-2 -->
 
-        <!-- <div class="nested-dropdown">
+        <div class="nested-dropdown">
           <a href="javascript:void(0);" onclick="showComponent(1)">EXPANSION JOINT </a>
           <div class="nested-dropdown-content">
             <a href="javascript:void(0);" onclick="showComponent(2)">JOINT BOARDS </a>
@@ -372,7 +371,7 @@
             <a href="javascript:void(0);" onclick="showComponent(5)">JOINT TAPES </a>
             <a href="javascript:void(0);" onclick="showComponent(6)">TAPE ADHESIVES </a>
           </div>
-        </div> -->
+        </div>
 
 
         <!-- item 8 -->
@@ -391,11 +390,6 @@
       </div>
     </div>
 
-=======
-    <div id="dropdownContainer"></div>
-    
-   
->>>>>>> d809fd083ae25a80f7f3fdcc6b6a77eda95be80b
     <div class="dropdown">
       <a href="products.html#RnR">Renovations and Repairs</a>
       <div class="dropdown-content">
@@ -513,14 +507,6 @@
               </div>
             </div>
 
-            <!-- <div class="double-nested-dropdown">
-              <a href="#">INSULATION </a>
-              <div class="double-nested-dropdown-content">
-                <a href="#">TERRACE </a>
-                <a href="#">CEILING </a>
-              </div>
-            </div> -->
-
           </div>
         </div>
 
@@ -533,6 +519,8 @@
 
 
   </div>
+
+  <button id="goToTopBtn" onclick="scrollToTop()">Go To Top <span style="font-weight: 900; width: 150%;">&#8593;</span></button>
 
   <div style="height: 50px;"></div>
 
@@ -5672,9 +5660,6 @@
 
   </div>
 
-  <div id="shipra-blog-page-2">
- 
-  </div>
 
 
 
@@ -5753,6 +5738,31 @@
     }
   </script>
 
+<script>
+  // Get the button
+  var mybutton = document.getElementById("goToTopBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+      } else {
+          mybutton.style.display = "none";
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
+
+</script>
+
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -5777,34 +5787,6 @@
         }
       });
     });
-
-    async function fetchData() {
-      try {
-        const response = await fetch('https://shipra-backend-yathin-kn.vercel.app/dropdown');
-        const htmlContent = await response.text();
-        
-        document.getElementById('dropdownContainer').innerHTML = htmlContent;
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    }
-
-    async function fetchProducts(){
-      try{
-       
-        const response = await fetch('https://shipra-backend-yathin-kn.vercel.app/renderProducts');
-        const htmlContent = await response.text();
-        document.getElementById('shipra-blog-page-2').innerHTML = htmlContent;
-
-      }catch(error){
-        console.error('Error fetching data:', error);
-      }
-    }
-
-    window.onload = () => {
-  fetchData();
-  fetchProducts();
-};
   </script>
 </body>
 

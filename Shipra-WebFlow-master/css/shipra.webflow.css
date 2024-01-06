@@ -1424,11 +1424,7 @@ li {
 .button2:hover{
   color: #da2b24;
   background-size: 100% 100%;
-  /* background-size: 100% 100%;
-  
-  background-color: #fff; */
-  
-  /* transition: .4s; */
+
 }
 
 .button2-text {
