@@ -107,6 +107,7 @@
     <!-- <h3>Dropdown</h3> -->
 
 
+<<<<<<< HEAD
     <div class="dropdown">
       <a href="#">New Construction Projects</a>
       <div class="dropdown-content">
@@ -390,6 +391,11 @@
       </div>
     </div>
 
+=======
+    <div id="dropdownContainer"></div>
+    
+   
+>>>>>>> d809fd083ae25a80f7f3fdcc6b6a77eda95be80b
     <div class="dropdown">
       <a href="products.html#RnR">Renovations and Repairs</a>
       <div class="dropdown-content">
@@ -5666,6 +5672,9 @@
 
   </div>
 
+  <div id="shipra-blog-page-2">
+ 
+  </div>
 
 
 
@@ -5768,6 +5777,34 @@
         }
       });
     });
+
+    async function fetchData() {
+      try {
+        const response = await fetch('https://shipra-backend-yathin-kn.vercel.app/dropdown');
+        const htmlContent = await response.text();
+        
+        document.getElementById('dropdownContainer').innerHTML = htmlContent;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    async function fetchProducts(){
+      try{
+       
+        const response = await fetch('https://shipra-backend-yathin-kn.vercel.app/renderProducts');
+        const htmlContent = await response.text();
+        document.getElementById('shipra-blog-page-2').innerHTML = htmlContent;
+
+      }catch(error){
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    window.onload = () => {
+  fetchData();
+  fetchProducts();
+};
   </script>
 </body>
 
