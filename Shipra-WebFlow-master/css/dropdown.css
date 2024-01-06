@@ -17,6 +17,16 @@
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  .dropdown button {
+
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
   .dropdown-content {
     display: none;
@@ -34,7 +44,11 @@
   }
 
   .nested-dropdown a {
-    background-color: f8f8f8;
+    background-color: #f8f8f8;
+    /* background-color: #e0e0e0; */
+  }
+  .nested-dropdown button {
+    background-color: #f8f8f8;
     /* background-color: #e0e0e0; */
   }
 
@@ -51,12 +65,19 @@
   .nested-dropdown-content a{
     background-color: #e0e0e0;
   }
+  .nested-dropdown-content button{
+    background-color: #e0e0e0;
+  }
 
   .double-nested-dropdown {
     position: relative;
   }
 
   .double-nested-dropdown a {
+    background-color: #e0e0e0;
+    /* background-color: #d0d0d0; */
+  }
+  .double-nested-dropdown button {
     background-color: #e0e0e0;
     /* background-color: #d0d0d0; */
   }
@@ -74,6 +95,9 @@
   .double-nested-dropdown-content a{
     background-color: #d0d0d0;
   }
+  .double-nested-dropdown-content button{
+    background-color: #d0d0d0;
+  }
 
   /* Show dropdown content on hover */
   .dropdown:hover .dropdown-content,
@@ -86,5 +110,10 @@
   .dropdown a:hover,
   .nested-dropdown a:hover,
   .double-nested-dropdown a:hover {
+    background-color: #ccc;
+  }
+  .dropdown button:hover,
+  .nested-dropdown button:hover,
+  .double-nested-dropdown button:hover {
     background-color: #ccc;
   }
