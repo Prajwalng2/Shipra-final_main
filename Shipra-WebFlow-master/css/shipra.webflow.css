@@ -3507,8 +3507,8 @@ li {
 }
 
 .div-block-22 {
-  height: 350px;
-  min-width: 600px;
+  height: 20rem;
+  min-width: 25rem;
   background-image: url('../images/Innovative-solutions.webp');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -3518,7 +3518,7 @@ li {
 }
 
 .paragraph-11 {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .div-block-23 {
@@ -4199,6 +4199,8 @@ li {
   }
 
   .div-block-22{
+    height: 200px;
+    min-width: 350px;
     margin-bottom: 30px;
     margin-right: 0; 
   }
@@ -5407,8 +5409,11 @@ li {
     width: auto;
     font-size: 12px;
   }
+  .div-block-22{
+    min-width: 100px;
+  }
 
-  .div-block-22, .div-block-24, .div-block-27, .div-block-28 {
+  .div-block-24, .div-block-27, .div-block-28 {
     min-width: 300px;
   }
 
