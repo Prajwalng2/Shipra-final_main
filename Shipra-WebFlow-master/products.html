@@ -335,7 +335,7 @@
         </div>
 
         <!-- test item -->
-        <div class="nested-dropdown">
+        <!-- <div class="nested-dropdown">
           <button> EXPANSION JOINT </button>
           <div class="nested-dropdown-content">
             <button>JOINT BOARDS </button>
@@ -351,27 +351,27 @@
             <button>JOINT TAPES </button>
             <button>TAPE ADHESIVES </button>
           </div>
-        </div>
+        </div> -->
 
         <!-- test item-2 -->
 
-        <div class="nested-dropdown">
-          <a href="javascript:void(0);">EXPANSION JOINT </a>
+        <!-- <div class="nested-dropdown">
+          <a href="javascript:void(0);" onclick="showComponent(1)">EXPANSION JOINT </a>
           <div class="nested-dropdown-content">
-            <a href="javascript:void(0);">JOINT BOARDS </a>
-            <a href="javascript:void(0);">PROFILE </a>
+            <a href="javascript:void(0);" onclick="showComponent(2)">JOINT BOARDS </a>
+            <a href="javascript:void(0);" onclick="showComponent(3)">PROFILE </a>
             <div class="double-nested-dropdown">
-              <a href="javascript:void(0);">SEALANT </a>
+              <a href="javascript:void(0);" onclick="showComponent(4)">SEALANT </a>
               <div class="double-nested-dropdown-content">
                 <a href="javascript:void(0);">POLYSULPHIDE </a>
                 <a href="javascript:void(0);">PU SEALANT </a>
                 <a href="javascript:void(0);">SILICONE </a>
               </div>
             </div>
-            <a href="javascript:void(0);">JOINT TAPES </a>
-            <a href="javascript:void(0);">TAPE ADHESIVES </a>
+            <a href="javascript:void(0);" onclick="showComponent(5)">JOINT TAPES </a>
+            <a href="javascript:void(0);" onclick="showComponent(6)">TAPE ADHESIVES </a>
           </div>
-        </div>
+        </div> -->
 
 
         <!-- item 8 -->
@@ -5713,6 +5713,38 @@
   <!-- <script src="js/webflow.js" type="text/javascript"></script> -->
   <script src="js/Products_.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
+
+  <!-- Javascaript for the Filter -->
+  <script>
+    function hideone(){
+        document.getElementById('component1').style.display = 'none';
+
+    }
+
+    function showComponent(componentNumber) {
+      // Hide all components
+      hideAllComponents();
+
+      // Show the selected component
+      document.getElementById('component' + componentNumber).style.display = 'block';
+    }
+
+    function hideAllComponents() {
+      // Hide all components
+      var components = document.getElementsByClassName('component');
+      for (var i = 0; i < components.length; i++) {
+        components[i].style.display = 'none';
+      }
+
+      var components_spl = document.getElementsByClassName('component-spl');
+      for (var i = 0; i < components_spl.length; i++) {
+        components_spl[i].style.display = 'none';
+      }
+
+    }
+  </script>
+
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       // First Filter Section

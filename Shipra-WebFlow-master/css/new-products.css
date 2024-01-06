@@ -516,7 +516,12 @@
     
   }
 
+.frame-cover{
+  display: none;
+}
+
 .frame-93 {
+
     display: flex;
     /* flex-direction:row; */
 
