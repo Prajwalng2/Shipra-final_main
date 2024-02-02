@@ -4349,6 +4349,9 @@ li {
   .d-127-card-wrapper {
     margin-left: 0;
     margin-right: 0;
+    /* width: 85%;
+    height: 150px; */
+
   }
 
   .our-approach_text-style_h2 {
@@ -4944,7 +4947,7 @@ li {
   }
 
   .d-127-card-wrapper {
-    width: 100%;
+    width: 45%;
     height: 150px;
   }
 
@@ -4985,6 +4988,10 @@ li {
 
   .usp_grid {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
   }
 
   .quotes_itallics {
