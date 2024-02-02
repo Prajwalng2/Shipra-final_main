@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* .shipra-blog-page,
 .shipra-blog-page * {
   box-sizing: border-box;
@@ -841,6 +841,28 @@
     margin: 10px;
     padding: 5px;
 
+  }
+  .sub-cat-title{
+    color: var(--neutral-black, #2d2e2d);
+    text-align: center;
+    font-family: var(
+      --sectionsubtitle-font-family,
+      "Poppins-SemiBold",
+      sans-serif
+    );
+    font-size: var(--sectionsubtitle-font-size, 14px);
+    /* line-height: var(--sectionsubtitle-line-height, 135%); */
+    font-weight: var(--sectionsubtitle-font-weight, 700);
+    /* text-transform: uppercase; */
+    position: relative;
+    /* left: calc(50% - 213px); */
+    /* top: 275px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
 
