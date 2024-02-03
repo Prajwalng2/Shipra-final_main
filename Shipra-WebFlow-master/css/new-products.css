@@ -1438,6 +1438,20 @@
     margin-top: 60px;
     }
 
+    .sub-cat-title{
+      
+      position: relative;
+      /* left: calc(50% - 213px); */
+      /* top: 275px; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      padding-left: 5%;
+      padding-right: 5%;
+
+    }
+
 
   }
 
