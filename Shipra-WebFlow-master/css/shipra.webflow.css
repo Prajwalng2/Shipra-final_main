@@ -318,14 +318,14 @@ li {
 }
 
 .main-slide-wrapper._2 {
-  background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0)), url('../images/Hero-banner_02.webp');
+  background-image: linear-gradient(to right, #000, rgba(0, 0, 0, 0)), url('../images/Surat_Diamond_Bourse_Aerial_View-min-p-1080.jpg');
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
 }
 
 .main-slide-wrapper._1 {
-  background-image: linear-gradient(98deg, #000, rgba(0, 0, 0, 0)), url('../images/Hero-banner_01.webp');
+  background-image: linear-gradient(98deg, #000, rgba(0, 0, 0, 0)), url('../images/header1.jpg');
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
