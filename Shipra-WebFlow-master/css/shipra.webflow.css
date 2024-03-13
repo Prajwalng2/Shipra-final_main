@@ -325,7 +325,7 @@ li {
 }
 
 .main-slide-wrapper._1 {
-  background-image: linear-gradient(98deg, #000, rgba(0, 0, 0, 0)), url('../images/header1.jpg');
+  background-image: linear-gradient(98deg, #000, rgba(0, 0, 0, 0)), url('../images/Map_GujDist_South.png');
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -3489,7 +3489,7 @@ li {
 .div-block-21 {
   width: 500px;
   height: 300px;
-  background-image: url('../images/Parliament.webp');
+  background-image: url('../images/New_Parliament_Build_01.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
