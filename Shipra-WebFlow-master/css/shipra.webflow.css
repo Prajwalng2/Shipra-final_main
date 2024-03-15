@@ -1813,7 +1813,7 @@ li {
 }
 
 .page_banner.products, .page_banner.about-us, .page_banner.contact-us {
-  background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../images/System.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.062), rgb(0, 0, 0)), url('../images/about-us-header-hero.jpg');
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;

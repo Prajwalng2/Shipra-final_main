@@ -991,12 +991,32 @@
     
   }
 
-  .shipra-blog-page-2 {
+  .shipra-blog-page-2-1 {
+    opacity: 1;
     background: #ffffff;
     /* width: 1240px; */
     /* height: 551px; */
     position: relative;
     display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    /* justify-content: center;
+    
+    text-align: center; */
+
+    /* align-items:start; */
+    
+  }
+  .shipra-blog-page-2 {
+    opacity: 0;
+    background: #ffffff;
+    /* width: 1240px; */
+    /* height: 551px; */
+    position: relative;
+    display: hidden;
     flex-direction: column;
     padding: 10px;
     padding-bottom: 20px;
